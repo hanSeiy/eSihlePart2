@@ -81,8 +81,12 @@ WSGI_APPLICATION = 'watermelon.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'decdp7lrc8obtd',
+        'USER': 'ruakmpjurrgxpq',
+        'PASSWORD': '4ff61a6e94bb901f8d913b018bbc3b257f0633b897953fe5e4468169e872193f',
+        'HOST': 'ec2-54-156-121-167.compute-1.amazonaws.com',
+        'PORT': '5432'
     }
 }
 
