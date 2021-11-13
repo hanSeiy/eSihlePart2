@@ -27,7 +27,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-_#-z&7d27e&gx8cwod(%j^!y-_i5ihuh6xc=gx=6n=$_k)hv7b'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['local', 'esihle.herokuapp.com']
 
@@ -41,7 +41,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'orders'
+    'orders',
+    'gunicorn'
 ]
 
 MIDDLEWARE = [
