@@ -159,4 +159,4 @@ CSRF_COOKIE_SECURE = True
 
 SECURE_SSL_REDIRECT = True
 
-django_heroku.settings(locals())
+django_heroku.settings(locals(), staticfiles=False)
