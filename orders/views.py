@@ -23,6 +23,6 @@ def index(request):
         current_obj = {'id': 3}
     return render(request, 'index.html', {'order_form': order_form, 'current_obj': current_obj})
 
-def order_invoice(request, pk):
+'''def order_invoice(request, pk):
     orders = Invoice.objects.get(id=pk)
-    return render(request, "order_invoice.html", {'orders': orders})
+    return render(request, "order_invoice.html", {'orders': orders})'''
